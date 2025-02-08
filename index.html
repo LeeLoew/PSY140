@@ -1,171 +1,101 @@
 ---
 layout: home
-title: Project Template
-subtitle: A customizable starting point for your projects
+title: PSY140: Approaches to Personality
+subtitle: Select an option below or use the dropdown menu for more information.
 ---
-<div class="main-content">
-  <div class="intro-section">
-    <h2>Welcome!</h2>
-    <p>This is a flexible template that can be customized for various purposes. Whether you're creating documentation, sharing research, or building a project showcase, this template provides a clean, professional foundation.</p>
-  </div>
+<div class="home-content">
+  <ul class="menu-options">
+    <li>
+      <a href="{{ site.baseurl }}/aboutme/" class="menu-link">
+        <span class="menu-text">Learn more</span>
+        <span class="menu-highlight">about me</span>
+      </a>
+    </li>
+    <li>
+      <a href="{{ site.baseurl }}/research/" class="menu-link">
+        <span class="menu-text">View my</span>
+        <span class="menu-highlight">research</span>
+      </a>
+    </li>
+  </ul>
+</div>
 
-  <div class="features-section">
-    <h3>Template Features</h3>
-    <ul>
-      <li>🎨 Clean, modern design</li>
-      <li>📱 Fully responsive layout</li>
-      <li>🌙 Dark mode optimized</li>
-      <li>⚡ Fast loading and performance</li>
-    </ul>
-  </div>
-
-  <div class="navigation-section">
-    <h3>Quick Navigation</h3>
-    <div class="nav-grid">
-      <a href="{{ site.baseurl }}/overview/" class="nav-card">
-        <span class="card-title">📑 Overview</span>
-        <span class="card-desc">Project introduction and goals</span>
-      </a>
-      <a href="{{ site.baseurl }}/documentation/" class="nav-card">
-        <span class="card-title">📚 Documentation</span>
-        <span class="card-desc">Detailed information and guides</span>
-      </a>
-      <a href="{{ site.baseurl }}/examples/" class="nav-card">
-        <span class="card-title">💡 Examples</span>
-        <span class="card-desc">Sample implementations</span>
-      </a>
-      <a href="{{ site.baseurl }}/resources/" class="nav-card">
-        <span class="card-title">🔗 Resources</span>
-        <span class="card-desc">Additional materials and links</span>
-      </a>
-    </div>
-  </div>
+<div class="syllabus-section">
+  <h2>Syllabus</h2>
+  <ul>
+    <li>1. Understanding Yourself and Others</li>
+    <li>2. Assessment and Methods</li>
+    <li>3. The Big Five Personality Traits</li>
+    <li>4. Biological Underpinnings of Personality</li>
+    <li>5. Self-Concept and Self-Processes</li>
+    <li>6. Psychodynamic Approaches</li>
+    <li>7. Motivation</li>
+    <li>8. How Learning Shapes Behavior</li>
+    <li>9. Personality Across the Lifespan</li>
+    <li>10. Gender and Personality</li>
+    <li>11. Culture and Personality</li>
+    <li>12. Personality in the Workplace</li>
+    <li>13. Personality and Relationships</li>
+    <li>14. Personality and Mental Health</li>
+    <li>15. Personality and Physical Health</li>
+  </ul>
 </div>
 
 <div class="hit-counter">
   <a href="https://hits.seeyoufarm.com">
-    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fleeloew.github.io{{ site.baseurl | url_encode }}&count_bg=%23333333&title_bg=%231A1A1A&icon=&icon_color=%23E7E7E7&title=visits&edge_flat=false"/>
+    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fleeloew.github.io&count_bg=%23333333&title_bg=%231A1A1A&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/>
   </a>
 </div>
 
 <style>
-  .main-content {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-
-  .intro-section {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .intro-section h2 {
-    color: #4DA8DA;
-    margin-bottom: 20px;
-  }
-
-  .intro-section p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #E0E0E0;
-  }
-
-  .features-section {
-    background-color: #1A1A1A;
-    padding: 25px;
-    border-radius: 10px;
-    margin-bottom: 40px;
-  }
-
-  .features-section h3 {
-    color: #4DA8DA;
-    margin-bottom: 20px;
-  }
-
-  .features-section ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .features-section li {
-    margin: 15px 0;
-    color: #E0E0E0;
-    font-size: 1.1em;
-  }
-
-  .navigation-section {
-    margin-top: 40px;
-  }
-
-  .navigation-section h3 {
-    text-align: center;
-    color: #4DA8DA;
-    margin-bottom: 25px;
-  }
-
-  .nav-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-  }
-
-  .nav-card {
-    background-color: #1A1A1A;
-    padding: 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: all 0.3s ease;
+  .home-content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 40vh;
+    padding-top: 50px;  /* Add some top padding */
   }
-
-  .nav-card:hover {
+  .menu-options {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;  /* Center the list items */
+  }
+  .menu-link {
+    display: inline-block;  /* Change to inline-block for centering */
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding: 15px 25px;
+    background-color: #1A1A1A;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    min-width: 250px;  /* Set a minimum width for consistent button size */
+  }
+  .menu-link:hover {
     background-color: #333333;
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    text-decoration: none;
   }
-
-  .card-title {
-    color: #4DA8DA;
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
-
-  .card-desc {
+  .menu-text {
     color: #E0E0E0;
-    font-size: 0.9em;
   }
-
+  .menu-highlight {
+    color: #4DA8DA;
+    font-weight: bold;
+  }
+  .syllabus-section {
+    text-align: center;  /* Center the syllabus section */
+    margin-top: 40px;   /* Add some margin for spacing */
+  }
+  .syllabus-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
   .hit-counter {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 30px;
   }
-
   .hit-counter img {
     border-radius: 4px;
-  }
-
-  @media (max-width: 768px) {
-    .nav-grid {
-      grid-template-columns: 1fr;
-    }
-    
-    .main-content {
-      padding: 10px;
-    }
-    
-    .intro-section p {
-      font-size: 1em;
-    }
-    
-    .features-section li {
-      font-size: 1em;
-    }
   }
 </style>
