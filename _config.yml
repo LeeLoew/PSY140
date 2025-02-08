@@ -3,35 +3,35 @@
 
 # --- Required options --- #
 
-# URL of your website
+# URL of your website (replace with your GitHub username)
 url: "https://leeloew.github.io"
-baseurl: "/PSY140"  # This is the critical change
+baseurl: ""  # Replace with your repository name, e.g., "/project-name"
 
-# Name of website
-title: Leeland Loew Rogers, Ph.D.
-
-# Your name to show in the footer
-author: Leeland Loew Rogers, Ph.D.
+# Site title and author
+title: "Project Title"
+author: "Your Name"
 
 # --- Navigation bar links --- #
 
 navbar-links:
-  Explore this website:
-   - About Me: "/aboutme/"
-   - Research: "/research/"
+  Navigation:
+    - Overview: "/overview/"
+    - Documentation: "/documentation/"
+    - Examples: "/examples/"
+    - Resources: "/resources/"
 
 # --- Logo --- #
 
-#avatar: "/assets/img/selfie.png"
+#avatar: "/assets/img/logo.png"
 #round-avatar: true
 
 # --- Footer social media links --- #
 
 social-network-links:
-  email: "leeland.rogers@gmail.com"
-  github: leeloew
-  twitter: LeelandRogers
-  youtube: channel/UCfqelE3f2jKYiWUlkuKCKRg
+  email: "your.email@example.com"
+  github: username
+  twitter: username
+  linkedin: username
 
 # --- General options --- #
 
@@ -48,8 +48,9 @@ feed_show_excerpt: false
 feed_show_tags: false
 post_search: true
 
-# --- Colours / background image --- #
+# --- Theme colors --- #
 
+# Dark theme color scheme
 navbar-col: "#1A1A1A"
 navbar-text-col: "#E0E0E0"
 navbar-border-col: "#333333"
@@ -60,24 +61,10 @@ hover-col: "#6FBEF2"
 footer-col: "#1A1A1A"
 footer-text-col: "#CCCCCC"
 footer-link-col: "#4DA8DA"
-
-# Add these new options
 header-text-col: "#FFFFFF"
 subtitle-text-col: "#CCCCCC"
 
-# --- Web Analytics Section --- #
-
-# [Keep your existing analytics settings]
-
-# --- Comments --- #
-
-# [Keep your existing comments settings]
-
-# --- Misc --- #
-
-date_format: "%B %-d, %Y"
-
-# --- You don't need to touch anything below here (but you can if you want) --- #
+# --- Core Jekyll Settings --- #
 
 timezone: "America/Toronto"
 markdown: kramdown
@@ -88,6 +75,8 @@ paginate: 5
 kramdown:
   input: GFM
 
+# --- Default layouts --- #
+
 defaults:
   -
     scope:
@@ -95,13 +84,15 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: true
+      comments: false  # Changed to false by default
       social-share: true
   -
     scope:
       path: ""
     values:
       layout: "page"
+
+# --- Files to exclude --- #
 
 exclude:
   - CHANGELOG.md
@@ -113,10 +104,13 @@ exclude:
   - screenshot.png
   - docs/
 
+# --- Plugin Settings --- #
+
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-remote-theme
 
-# Add these lines if not already present
+# --- Theme Settings --- #
+
 remote_theme: daattali/beautiful-jekyll@5.0.0
