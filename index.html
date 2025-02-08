@@ -11,7 +11,7 @@ subtitle: Understanding the Science of Individual Differences
 <div class="units-section">
   <h2>Course Units</h2>
   <div class="unit-container">
-    <!-- Unit 1 -->
+    <!-- Unit 1: Unit left, image right -->
     <div class="unit-row">
       <a href="{{ site.baseurl }}/units/unit1" class="unit-card">
         <div class="unit-number">Unit 1</div>
@@ -22,8 +22,8 @@ subtitle: Understanding the Science of Individual Differences
       </div>
     </div>
 
-    <!-- Unit 2 -->
-    <div class="unit-row reverse">
+    <!-- Unit 2: Unit right, image left -->
+    <div class="unit-row">
       <div class="unit-image">
         <img src="/assets/images/unit2.jpg" alt="Assessment methods">
       </div>
@@ -33,7 +33,7 @@ subtitle: Understanding the Science of Individual Differences
       </a>
     </div>
 
-    <!-- Unit 3 -->
+    <!-- Unit 3: Unit left, image right -->
     <div class="unit-row">
       <a href="{{ site.baseurl }}/units/unit3" class="unit-card">
         <div class="unit-number">Unit 3</div>
@@ -45,7 +45,7 @@ subtitle: Understanding the Science of Individual Differences
     </div>
 
     <!-- Unit 4 -->
-    <div class="unit-row reverse">
+    <div class="unit-row">
       <div class="unit-image">
         <img src="/assets/images/unit4.jpg" alt="Biological Underpinnings of Personality">
       </div>
@@ -67,7 +67,7 @@ subtitle: Understanding the Science of Individual Differences
     </div>
 
     <!-- Unit 6 -->
-    <div class="unit-row reverse">
+    <div class="unit-row">
       <div class="unit-image">
         <img src="/assets/images/unit6.jpg" alt="Psychodynamic Approaches">
       </div>
@@ -89,7 +89,7 @@ subtitle: Understanding the Science of Individual Differences
     </div>
 
     <!-- Unit 8 -->
-    <div class="unit-row reverse">
+    <div class="unit-row">
       <div class="unit-image">
         <img src="/assets/images/unit8.jpg" alt="How Learning Shapes Behavior">
       </div>
@@ -111,7 +111,7 @@ subtitle: Understanding the Science of Individual Differences
     </div>
 
     <!-- Unit 10 -->
-    <div class="unit-row reverse">
+    <div class="unit-row">
       <div class="unit-image">
         <img src="/assets/images/unit10.jpg" alt="Gender and Personality">
       </div>
@@ -133,7 +133,7 @@ subtitle: Understanding the Science of Individual Differences
     </div>
 
     <!-- Unit 12 -->
-    <div class="unit-row reverse">
+    <div class="unit-row">
       <div class="unit-image">
         <img src="/assets/images/unit12.jpg" alt="Personality in the Workplace">
       </div>
@@ -155,7 +155,7 @@ subtitle: Understanding the Science of Individual Differences
     </div>
 
     <!-- Unit 14 -->
-    <div class="unit-row reverse">
+    <div class="unit-row">
       <div class="unit-image">
         <img src="/assets/images/unit14.jpg" alt="Personality and Mental Health">
       </div>
@@ -250,7 +250,7 @@ subtitle: Understanding the Science of Individual Differences
     position: relative;
   }
 
-  .unit-row.reverse {
+  .unit-row:nth-child(even) {
     flex-direction: row-reverse;
   }
 
