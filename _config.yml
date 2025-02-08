@@ -5,7 +5,7 @@
 
 # URL of your website
 url: "https://leeloew.github.io"
-baseurl: ""  # If your site is in a subdirectory, set it here (e.g., "/blog")
+baseurl: "/PSY140"  # This is the critical change
 
 # Name of website
 title: Leeland Loew Rogers, Ph.D.
@@ -116,3 +116,7 @@ exclude:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-remote-theme
+
+# Add these lines if not already present
+remote_theme: daattali/beautiful-jekyll@5.0.0
