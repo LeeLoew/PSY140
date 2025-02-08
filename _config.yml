@@ -3,6 +3,10 @@
 
 # --- Required options --- #
 
+# URL of your website
+url: "https://leeloew.github.io"
+baseurl: ""  # If your site is in a subdirectory, set it here (e.g., "/blog")
+
 # Name of website
 title: Leeland Loew Rogers, Ph.D.
 
@@ -13,8 +17,8 @@ author: Leeland Loew Rogers, Ph.D.
 
 navbar-links:
   Explore this website:
-   - About Me: "https://leeloew.github.io/aboutme/"
-   - Research: "https://leeloew.github.io/research/"
+   - About Me: "/aboutme/"
+   - Research: "/research/"
 
 # --- Logo --- #
 
