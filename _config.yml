@@ -1,0 +1,114 @@
+# Welcome to Beautiful Jekyll
+# This config file is meant for settings that affect your entire website.
+
+# --- Required options --- #
+
+# Name of website
+title: Leeland Loew Rogers, Ph.D.
+
+# Your name to show in the footer
+author: Leeland Loew Rogers, Ph.D.
+
+# --- Navigation bar links --- #
+
+navbar-links:
+  Explore this website:
+   - About Me: "https://leeloew.github.io/aboutme/"
+   - Research: "https://leeloew.github.io/research/"
+
+# --- Logo --- #
+
+#avatar: "/assets/img/selfie.png"
+#round-avatar: true
+
+# --- Footer social media links --- #
+
+social-network-links:
+  email: "leeland.rogers@gmail.com"
+  github: leeloew
+  twitter: LeelandRogers
+  youtube: channel/UCfqelE3f2jKYiWUlkuKCKRg
+
+# --- General options --- #
+
+share-links-active:
+  twitter: true
+  facebook: false
+  linkedin: true
+  vk: false
+
+url-pretty: "Home"
+
+excerpt_length: 0
+feed_show_excerpt: false
+feed_show_tags: false
+post_search: true
+
+# --- Colours / background image --- #
+
+navbar-col: "#1A1A1A"
+navbar-text-col: "#E0E0E0"
+navbar-border-col: "#333333"
+page-col: "#121212"
+text-col: "#E0E0E0"
+link-col: "#4DA8DA"
+hover-col: "#6FBEF2"
+footer-col: "#1A1A1A"
+footer-text-col: "#CCCCCC"
+footer-link-col: "#4DA8DA"
+
+# Add these new options
+header-text-col: "#FFFFFF"
+subtitle-text-col: "#CCCCCC"
+
+# --- Web Analytics Section --- #
+
+# [Keep your existing analytics settings]
+
+# --- Comments --- #
+
+# [Keep your existing comments settings]
+
+# --- Misc --- #
+
+date_format: "%B %-d, %Y"
+
+# --- You don't need to touch anything below here (but you can if you want) --- #
+
+timezone: "America/Toronto"
+markdown: kramdown
+highlighter: rouge
+permalink: /:year-:month-:day-:title/
+paginate: 5
+
+kramdown:
+  input: GFM
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+      social-share: true
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
+
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - screenshot.png
+  - docs/
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
