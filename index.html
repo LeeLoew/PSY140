@@ -1,101 +1,153 @@
 ---
 layout: home
 title: PSY140: Approaches to Personality
-subtitle: Select an option below or use the dropdown menu for more information.
+subtitle: Understanding the Science of Individual Differences
 ---
-<div class="home-content">
-  <ul class="menu-options">
-    <li>
-      <a href="{{ site.baseurl }}/aboutme/" class="menu-link">
-        <span class="menu-text">Learn more</span>
-        <span class="menu-highlight">about me</span>
-      </a>
-    </li>
-    <li>
-      <a href="{{ site.baseurl }}/research/" class="menu-link">
-        <span class="menu-text">View my</span>
-        <span class="menu-highlight">research</span>
-      </a>
-    </li>
-  </ul>
+<div class="course-header">
+  <h1>PSY140: Approaches to Personality</h1>
+  <p class="course-description">Explore the fascinating world of personality psychology, from classical theories to cutting-edge research. This course examines how individual differences shape human behavior, emotion, and cognition.</p>
 </div>
 
 <div class="syllabus-section">
-  <h2>Syllabus</h2>
-  <ul>
-    <li>1. Understanding Yourself and Others</li>
-    <li>2. Assessment and Methods</li>
-    <li>3. The Big Five Personality Traits</li>
-    <li>4. Biological Underpinnings of Personality</li>
-    <li>5. Self-Concept and Self-Processes</li>
-    <li>6. Psychodynamic Approaches</li>
-    <li>7. Motivation</li>
-    <li>8. How Learning Shapes Behavior</li>
-    <li>9. Personality Across the Lifespan</li>
-    <li>10. Gender and Personality</li>
-    <li>11. Culture and Personality</li>
-    <li>12. Personality in the Workplace</li>
-    <li>13. Personality and Relationships</li>
-    <li>14. Personality and Mental Health</li>
-    <li>15. Personality and Physical Health</li>
-  </ul>
+  <h2>Course Content</h2>
+  <div class="unit-grid">
+    {% for unit in site.data.units %}
+    <a href="{{ site.baseurl }}/units/unit-{{ unit.number }}" class="unit-card">
+      <div class="unit-number">Unit {{ unit.number }}</div>
+      <div class="unit-title">{{ unit.title }}</div>
+    </a>
+    {% endfor %}
+  </div>
 </div>
 
-<div class="hit-counter">
-  <a href="https://hits.seeyoufarm.com">
-    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fleeloew.github.io&count_bg=%23333333&title_bg=%231A1A1A&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/>
-  </a>
+<div class="course-resources">
+  <h2>Course Resources</h2>
+  <div class="resource-buttons">
+    <a href="{{ site.baseurl }}/syllabus" class="resource-button">
+      <i class="fas fa-book"></i>
+      <span>Course Syllabus</span>
+    </a>
+    <a href="{{ site.baseurl }}/schedule" class="resource-button">
+      <i class="fas fa-calendar-alt"></i>
+      <span>Class Schedule</span>
+    </a>
+    <a href="{{ site.baseurl }}/resources" class="resource-button">
+      <i class="fas fa-graduation-cap"></i>
+      <span>Learning Materials</span>
+    </a>
+  </div>
 </div>
 
 <style>
-  .home-content {
+  /* Modern color scheme */
+  :root {
+    --primary-color: #2C3E50;
+    --secondary-color: #3498DB;
+    --accent-color: #E74C3C;
+    --background-color: #F5F6FA;
+    --text-color: #2C3E50;
+    --card-hover: #ECF0F1;
+  }
+
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .course-header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    margin-bottom: 2rem;
+  }
+
+  .course-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .course-description {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .unit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .unit-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .unit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background-color: var(--card-hover);
+  }
+
+  .unit-number {
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .unit-title {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  .course-resources {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+
+  .resource-buttons {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    min-height: 40vh;
-    padding-top: 50px;  /* Add some top padding */
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
   }
-  .menu-options {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;  /* Center the list items */
-  }
-  .menu-link {
-    display: inline-block;  /* Change to inline-block for centering */
-    font-size: 24px;
-    margin-bottom: 20px;
-    padding: 15px 25px;
-    background-color: #1A1A1A;
+
+  .resource-button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem 2rem;
     border-radius: 8px;
-    transition: all 0.3s ease;
     text-decoration: none;
-    min-width: 250px;  /* Set a minimum width for consistent button size */
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
-  .menu-link:hover {
-    background-color: #333333;
-    transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+  .resource-button:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
   }
-  .menu-text {
-    color: #E0E0E0;
-  }
-  .menu-highlight {
-    color: #4DA8DA;
-    font-weight: bold;
-  }
-  .syllabus-section {
-    text-align: center;  /* Center the syllabus section */
-    margin-top: 40px;   /* Add some margin for spacing */
-  }
-  .syllabus-section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-  .hit-counter {
+
+  h2 {
+    color: var(--primary-color);
     text-align: center;
-    margin-top: 30px;
-  }
-  .hit-counter img {
-    border-radius: 4px;
+    margin-bottom: 1.5rem;
   }
 </style>
+
+<!-- Add Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
